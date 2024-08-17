@@ -1,0 +1,31 @@
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.border{
+    border:2px solid white ;
+    margin: 3px;
+   
+}
+/* Style for webkit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #250e01; /* Darker brown for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3d1d02; /* Chocolate brown for the thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3c1e02; /* Lighter chocolate brown on hover */
+}
