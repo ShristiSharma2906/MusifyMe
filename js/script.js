@@ -213,7 +213,7 @@ async function main(){
     })
 
     //Add an event listener for hamburger
-    document.querySelector(".hamburger").addEventListener("click", ()=>{
+    /*document.querySelector(".hamburger").addEventListener("click", ()=>{
         document.querySelector(".left").style.left = "0"
     })
     document.querySelector(".hamburger").addEventListener("click", ()=>{
@@ -226,14 +226,17 @@ async function main(){
         document.querySelector(".left").style.left = "-120%"
         document.querySelector(".bottom").style.left= "-120%"
         
-    })
+    })*/
 
     //Add an event llisterner to previous and next
     previous.addEventListener("click" , ()=>{
         console.log("previous clicked")
         let index= songs.indexOf(currentSong.src.split("/").slice(-1)[0])
         if((index+1) >= 0){
-        playMusic(songs[index-1])}
+            playMusic(songs[index-1])}
+        else{
+             alert("no previous song")
+        }
     })
 
     next.addEventListener("click" , ()=>{
